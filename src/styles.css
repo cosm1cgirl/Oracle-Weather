@@ -19,3 +19,9 @@ h1 {
 .weather-details p {
   margin: 10px;
 }
+.weather-conditions {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  padding: 10px;
+}
