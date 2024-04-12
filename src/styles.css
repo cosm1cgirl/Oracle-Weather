@@ -64,3 +64,7 @@ form input[type="submit"] {
   font-size: 1em;
   cursor: pointer;
 }
+footer {
+  text-align: center;
+  padding: 10px;
+}
