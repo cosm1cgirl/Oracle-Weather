@@ -12,3 +12,7 @@ h1 {
   font-size: 2em;
   margin-top: 0 auto;
 }
+.weather-details {
+  display: flex;
+  justify-content: space-around;
+}
