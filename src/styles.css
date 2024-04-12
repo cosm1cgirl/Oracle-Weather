@@ -1,3 +1,9 @@
-h1 {
-  color: red;
+.weather-app {
+  background: white;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 30px;
+
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.6);
+  padding: 20px;
 }
