@@ -25,3 +25,42 @@ h1 {
   margin-bottom: 5px;
   padding: 10px;
 }
+.weather-conditions p {
+  margin: 2px;
+}
+.weather-conditions .icon {
+  font-size: 80px;
+  margin-bottom: 40px;
+}
+.weather-conditions .wind,
+.weather-conditions .humidity {
+  display: flex;
+
+  margin-bottom: 10px;
+}
+
+.wind-speed,
+.current-humidity {
+  color: hsl(236, 100%, 50%);
+}
+form {
+  text-align: center;
+}
+form input[type="search"] {
+  width: 350px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid 5F0F40;
+
+  font-size: 1em;
+}
+form input[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(236, 100%, 50%);
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
