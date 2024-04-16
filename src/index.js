@@ -1,18 +1,22 @@
 function updateTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
+  temperatureElement.innerHTML = Math.round(temperature) + "°c";
+
   let conditionElement = document.querySelector("#condition");
+  conditionElement.innerHTML = response.data.condition.description;
+
   let windSpeedElement = document.querySelector("#wind-speed");
+  windSpeedElement.innerHTML = Math.round(response.data.wind.speed) + "km/h";
+
   let humidityElement = document.querySelector("#current-humidity");
+  humidityElement.innerHTML = response.data.temperature.humidity + "%";
+
   let iconElement = document.getElementById("icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" id="icon">`;
+
   let date = new Date(response.data.time * 1000);
   let timeElement = document.getElementById("day-time");
-
-  temperatureElement.innerHTML = Math.round(temperature) + "°c";
-  conditionElement.innerHTML = response.data.condition.description;
-  windSpeedElement.innerHTML = Math.round(response.data.wind.speed) + "km/h";
-  humidityElement.innerHTML = response.data.temperature.humidity + "%";
-  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" id="icon">`;
   timeElement.innerHTML = formatDate(date);
 
   function formatDate(date) {
