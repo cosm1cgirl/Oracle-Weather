@@ -21,40 +21,50 @@
 
 h1 {
   text-align: center;
-  font-size: 2em;
+  font-size: 30px;
   margin-top: 0 auto;
+  color: #5b6283;
 }
 .weather-details {
   display: flex;
+  font-weight: bold;
   justify-content: space-around;
+  padding: 2px 50px;
 }
-.weather-details p {
-  margin: 10px;
-}
+
 .weather-conditions {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 5px;
   padding: 10px;
+  margin-top: 5px;
 }
-.weather-conditions p {
-  margin: 2px;
+#icon {
+  width: 200px;
+  height: 190px;
 }
-.weather-conditions .icon {
-  font-size: 80px;
-  margin-bottom: 40px;
+img {
+  width: 230px;
+  height: 190px;
 }
+
+.temperature {
+  margin-top: 40px;
+  font-size: 90px;
+  height: 100px;
+}
+
 .weather-conditions .wind,
 .weather-conditions .humidity {
   display: flex;
-
   margin-bottom: 10px;
 }
 
 .wind-speed,
-.current-humidity {
-  color: hsl(236, 100%, 50%);
+#current-humidity {
+  font-weight: bold;
+  color: #970063;
 }
+
 form {
   text-align: center;
 }
@@ -64,14 +74,13 @@ form input[type="search"] {
   margin-right: 10px;
   border-radius: 5px;
   border: 1px solid 5F0F40;
-
   font-size: 1em;
 }
 form input[type="submit"] {
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color: hsl(236, 100%, 50%);
+  background-color: #5b6283;
   color: white;
   font-size: 1em;
   cursor: pointer;
