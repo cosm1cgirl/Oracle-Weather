@@ -3,27 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Oracle Weather App</title>
   </head>
+
   <body>
-    
-    <div class="weather-app">  
-       <h1 class = "current-city">Cape Town</h1>
+    <main class="weather-app">
+      <h1 id="city">Cape Town</h1>
       <div class="weather-details">
-        <p><strong>Current Weather</strong></p>
-        <p class="day-time"><strong>Friday 12:17</strong></p>
+        <p>Current Weather</p>
+        <p id="day-time">Friday 12:17</p>
       </div>
       <div class="weather-conditions">
-        <p class="icon">⛅<strong>18°C</strong></p>
-        <div><p class="wind">Wind: <strong><span class="wind-speed">35km/h</strong></span></p>
-        <p class="humidity">Humidity: <strong><span class="current-humidity">16%</strong></span></p>
+        <span id="icon"></span>
+        <span class="temperature" id="temperature">18°c</span>
+
+        <div class="current-conditions">
+          <p id="condition">sunny</p>
+          <p class="wind">
+            Wind:<span class="wind-speed" id="wind-speed"
+              ><strong>35km/h</strong></span
+            >
+          </p>
+          <p class="humidity">
+            Humidity:<span id="current-humidity">16 %</span>
+          </p>
+        </div>
       </div>
-      </div>
-      <form>
-        <input type="search" placeholder="Enter your city" required />
-        <input type="submit" value="Search" />
+
+      <form submit="search" id="search-form">
+        <input
+          type="search"
+          placeholder="Enter your city"
+          required
+          id="search-form-input"
+        />
+        <input type="submit" value="search" id="search-form-button" />
       </form>
+
       <script src="src/index.js"></script>
       <footer>
         This project was coded by
@@ -39,6 +56,6 @@
           >Netlify.</a
         >
       </footer>
-    </div>
+    </main>
   </body>
 </html>
