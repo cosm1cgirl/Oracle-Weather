@@ -5,8 +5,10 @@ function updateTemperature(response) {
 
   let conditionElement = document.querySelector("#condition");
   conditionElement.innerHTML = response.data.condition.description;
-}
 
+  let windSpeedElement = document.querySelector("#wind-speed");
+  windSpeedElement.innerHTML = Math.round(response.data.wind.speed) + "km/h";
+}
 function searchCity(city) {
   let apiKey = "efc7a995b0ta50f31c388oe39854d44b";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
