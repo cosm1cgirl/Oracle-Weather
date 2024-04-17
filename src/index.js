@@ -8,6 +8,9 @@ function updateTemperature(response) {
 
   let windSpeedElement = document.querySelector("#wind-speed");
   windSpeedElement.innerHTML = Math.round(response.data.wind.speed) + "km/h";
+
+  let humidityElement = document.querySelector("#current-humidity");
+  humidityElement.innerHTML = response.data.temperature.humidity + "%";
 }
 function searchCity(city) {
   let apiKey = "efc7a995b0ta50f31c388oe39854d44b";
