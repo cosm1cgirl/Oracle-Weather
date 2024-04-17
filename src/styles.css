@@ -4,7 +4,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 .weather-app {
-  background: #f8f8f8b9;
+  background: white;
   max-width: 600px;
   margin: 40px auto;
   border-radius: 30px;
