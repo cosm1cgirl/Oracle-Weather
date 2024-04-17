@@ -11,6 +11,9 @@ function updateTemperature(response) {
 
   let humidityElement = document.querySelector("#current-humidity");
   humidityElement.innerHTML = response.data.temperature.humidity + "%";
+
+  let iconElement = document.getElementById("icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" id="icon">`;
 }
 function searchCity(city) {
   let apiKey = "efc7a995b0ta50f31c388oe39854d44b";
