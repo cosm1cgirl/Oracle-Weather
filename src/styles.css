@@ -1,12 +1,5 @@
 body {
-  background-image: linear-gradient(
-    to right bottom,
-    #f8f8f8b9,
-    #3e275362,
-    #4b456c6e,
-    #5b6283,
-    #727f97
-  );
+  background: whitesmoke;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
