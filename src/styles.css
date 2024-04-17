@@ -18,3 +18,40 @@ h1 {
   color: #efeff0;
   background-color: #17009777;
 }
+.weather-details {
+  color: #efeff0;
+  display: flex;
+  font-weight: bolder;
+  font-size: larger;
+  justify-content: space-around;
+  margin: -30px 0px;
+  background-color: #17009777;
+}
+
+.weather-conditions {
+  display: flex;
+  justify-content: space-around;
+  padding: 24px;
+  margin-top: 5px;
+}
+#icon {
+  width: 200px;
+  height: 190px;
+}
+.temperature {
+  margin-top: 40px;
+  font-size: 90px;
+  height: 100px;
+}
+
+.weather-conditions .wind,
+.weather-conditions .humidity {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.wind-speed,
+#current-humidity {
+  font-weight: bold;
+  color: #970063;
+}
